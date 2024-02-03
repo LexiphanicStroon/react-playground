@@ -1,16 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import React, { useState } from "react";
 import "./App.css";
-import "./Greeting.css"
-import { SayHello } from "./Greeting.jsx";
 
-function App() {  
+
+function App() {
+
+  const [stateValue, setStateValue] = useState(initialValue);
+
+  const [backgroundColor, setBackgroundColor] = useState(initialColor);
+
   return (
     <>
-<SayHello />
+
     </>
-  );
+  )
 }
 
 export default App;
